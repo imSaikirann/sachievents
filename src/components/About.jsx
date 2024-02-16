@@ -1,12 +1,20 @@
-import { Flex, Heading, Text, Box, Image, UnorderedList, ListItem } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Text,
+  Box,
+  Image,
+  UnorderedList,
+  ListItem,
+} from "@chakra-ui/react";
 import React from "react";
 
 export default function About() {
   return (
-    <Flex bg="pink.200" h="100%">
+    <Flex bg="pink.100" h="100%" >
       <Flex direction="column">
         <Heading
-          bg="pink.200"
+          bg="pink.100"
           fontSize="48px"
           pt="4"
           pl="10"
@@ -62,37 +70,42 @@ export default function About() {
           </Box>
           <Image src="hands-removebg-preview(1).png" />
         </Flex>
-        <Box mt="5" ml="14">
-          <Heading color="gray.700" >
-            Who Are We?
-          </Heading>
-          <Box color="black" pl="5" w="700px">
-  <UnorderedList>
-    <ListItem>
-      As a Start-up and creative agency, the options are unrivaled and
-      dedicated to providing the most comprehensive support with Top-tier
-      services.
-    </ListItem>
-    <ListItem>
-      Affordable & Adaptable: Our solutions cater to various needs, offering a
-      range of cost-effective and customizable packages
-    </ListItem>
-    <ListItem>
-      Committed & Accountable: We take responsibility forevery client, ensuring
-      their needs are efficiently and dutifully met.
-    </ListItem>
-    <ListItem>
-      Skilled & Diverse: Our team is a blend of experienced mentors and
-      innovative young talents, satisfying your demands with expertise and
-      creativity.
-    </ListItem>
-    <ListItem>
-      Punctual & Considerate: Wevalue your time. Your requirements are met
-      promptly and thoughtfully, precisely when you need them .
-    </ListItem>
-  </UnorderedList>
-</Box>;
-        </Box>
+        <Flex direction="row-reverse">
+          <Box mt="12" ml="220px" pb="12">
+            <Heading color="gray.700">Who Are We?</Heading>
+            <Box fontSize="20px" color="black" pl="5" w="650px" pt="8">
+              <UnorderedList>
+                <ListItem>
+                  As a Start-up and creative agency, the options are unrivaled
+                  and dedicated to providing the most comprehensive support with
+                  Top-tier services.
+                </ListItem>
+                <ListItem pt="5">
+                  Affordable & Adaptable: Our solutions cater to various needs,
+                  offering a range of cost-effective and customizable packages
+                </ListItem>
+                <ListItem pt="5">
+                  Committed & Accountable: We take responsibility forevery
+                  client, ensuring their needs are efficiently and dutifully
+                  met.
+                </ListItem>
+                <ListItem pt="5">
+                  Skilled & Diverse: Our team is a blend of experienced mentors
+                  and innovative young talents, satisfying your demands with
+                  expertise and creativity.
+                </ListItem>
+                <ListItem pt="5">
+                  Punctual & Considerate: Wevalue your time. Your requirements
+                  are met promptly and thoughtfully, precisely when you need
+                  them .
+                </ListItem>
+              </UnorderedList>
+            </Box>
+          </Box>
+          <Box>
+          <Image src="logo.jpg" h="450px" w="350px" pt="120px"/>
+          </Box>
+        </Flex>
       </Flex>
     </Flex>
   );
